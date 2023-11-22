@@ -12,6 +12,7 @@ else
     <div class="grid">
         @foreach (var trail in _trails) 
         {
+            <TrailCard Trail="trail" />
             <div class="card shadow" style="width: 18rem;">
                 <img src="@trail.Image" class="card-img-top" alt="@trail.Name">
                 <div class="card-body">
